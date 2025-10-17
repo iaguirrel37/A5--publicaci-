@@ -1,85 +1,44 @@
 /* styles.css */
 
-/* Reset de marges i padding */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background: #ff9500;
-    color: white;
-    text-align: center;
-    padding: 20px 0 10px 0;
-}
-header h1 {
-
-    
-    margin: 0;
-    font-size: 2.2em;
-    font-weight: bold;
+.fons-comu {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 20px;
+  gap: 20px;
+  min-height: 300px;
 }
 
-/* Estils per a la navbar */
-nav {
-    background: #333;
-    padding: 15px;
+.columna-esquerra {
+  display: flex;
+  flex-direction: column; /* seccions una a sota de l’altra */
+  flex: 1; /* ocupa espai restant */
+  gap: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.sessio1, .sessio2 {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-nav ul li {
-    margin: 0 30px; 
+.barra-lateral {
+  width: 250px;
+  background-color: #d9d9d9;
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 0;
-    display: block;
-    font-size: 1em;
-    font-family: inherit;
+/* Responsivitat: a menys de 768px es posa tot en columna */
+@media (max-width: 768px) {
+  .fons-comu {
+    flex-direction: column;
+  }
+  
+  .barra-lateral {
+    width: 100%;
+  }
 }
 
-nav ul li a:hover {
-    color: #007bff;
-}
 
-/* Estils per al contenidor principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estils per a les files i columnes */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.col {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-}
-
-/* Estils per a títols i paràgrafs */
-h1, h2 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}

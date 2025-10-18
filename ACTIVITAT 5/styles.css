@@ -150,6 +150,10 @@ footer a {
 }
 footer a:hover { text-decoration: underline; }
 
+#sec1 p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 700px) {
   .container,
   .navbar {
@@ -166,3 +170,4 @@ footer a:hover { text-decoration: underline; }
     height: 220px;
   }
 }
+
